@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+*{
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    background-image: linear-gradient(to left, #f8aeff 0%, #67a1ff 100%);
+    
+}
+
+h1{
+    margin: 0%;
+    padding: 0%;
+    font-family: Montserrat;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+
+    font-style: bold;
+    font-family: Montserrat;
+    padding:5px 10px 5px 10px;; 
+    margin: 5px 10px 5px 10px;
+}
+li:hover{
+    transform: translateY(5px);
+
+}
+h1 img{
+    width: 50px;
+    height: 45px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+section{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px ;
+}
+p{
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: larger;
+
+}
+.home_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.para{
+    display:flex;
+    flex-direction: column;
+    /* text-align: justify; */
+    /* align-items: flex-start; */
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 50% ;
+}
+.para h1{
+    font-size: 64px;
+    font-family: Montserrat;
+}
+.para h1 span{
+    color: #0084ff;
+}
+.para p{
+    font-family: sans-serif;
+    padding: 5px;
+}
+.para button{
+    align-self: baseline;
+    background-color: #0d00ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+.para button:hover{
+    background-color: #0d00ff00;
+    border: 1px solid black;
+}
+.pic img{
+    width: 320px;;
+    height: 320px;
+    margin-right: 120px;
+    animation: 2s ease-in-out infinite alternate;
+    animation-name: move;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.image_grid{
+    display: flex-grid;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.image_grid img{
+    width: 150px;
+    margin: 15px;
+    animation-name: move;
+}
+
+.image_grid h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+.image_grid p{
+    padding: 50px;
+    text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.about h1{
+    font-family: Montserrat;
+    font-size: 64px;
+}
+.about p{
+    font-family: Montserrat;
+    padding: 25px;
+
+}
+
+.about ul{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    list-style: disc;
+    padding: 20px;
+}
+.about ul li{
+    font-family: Montserrat;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 35px;
+}
+.grid img{
+    width: 150px;
+    height: 150px;
+}
+.grid strong{
+    text-align: left;
+}
+
+
+
+.logo{
+    margin-left: 50px;
+}
+.logo a img{
+    width: 60px; 
+}
+.logo a h1{
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #0c0a3e;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+.links{
+    margin-right: 50px;
+}
+.links ul{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.links ul li{
+    font-family: 'Roboto Mono', monospace;   
+}
+.links ul li a{
+    color: #0c0a3e;
+
+}
+
+
+/* ============================================================================ */
+.css-button-arrow--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d348b
+  }
+  .css-button-arrow--blue:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--blue:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--blue:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+  /* ===========================Contact us============================= */
+  :root {
+    --prim: transparent;
+    --sec: #fcdc6a21;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.contactmain{
+    /* height: 100vh; */
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 100px 0;
+  }
+  
+  .contact {
+    height: 300px;
+    width: 300px;
+    position: relative;
+  }
+  .contact h2{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+   
+  }
+  
+  .profile {
+    background-image: url(https://img.freepik.com/free-vector/cute-cat-working-laptop-cartoon-vector-illustration-animal-technology-concept-isolated-premium-vector-flat-cartoon-style_138676-2238.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+    margin-top: 50px;
+  }
+  
+  .profile::before{
+    content: "Contact Me";
+    font-family: poppins;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 8px;
+    position: absolute;
+    bottom: -4%;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 9999px;
+    background-color: #00ab6d;
+  }
+  
+  .social {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    gap: 150px;
+    transform: scale(0.6) rotate(90deg);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .social a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    place-items: center;
+    display: grid;
+    fill: #fff;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+  }
+  .social a:hover,
+  .social a:focus {
+    background-color: #aab8c2;
+  }
+  .social a:hover > svg,
+  .social a:focus > svg {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social .twitter {
+    background-color: #1da1f2;
+  }
+  .social .facebook {
+    background-color: #4267b2;
+  }
+  
+  .social .linkdin {
+    background-color: #0072b1;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .social .instagram {
+    background-color: #e1306c;
+  }
+  
+  .contact:hover .social {
+    transform: scale(1);
+  }
+  .contact:hover .profile {
+    transform: translate(50%, -50%) scale(0.8);
+  }
+
